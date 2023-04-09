@@ -1,8 +1,14 @@
 import React from 'react'
+import Sidebar from '../components/Sidebar'
 
 const Homepage = () => {
   return (
-    <div>homepage</div>
+    <main className='main'>
+      <Sidebar />
+        <section className='main__homepage'>
+    hi
+        </section>
+    </main>
   )
 }
 

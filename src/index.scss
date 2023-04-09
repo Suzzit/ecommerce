@@ -1,5 +1,16 @@
+@import './pages/styles/homepage';
+@import './components/styles/header';
+@import './global';
+@import './components/styles/sidebar';
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+#root{
+    height: 100vh;
+    width: 100vw;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
