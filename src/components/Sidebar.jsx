@@ -1,15 +1,19 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { Link, NavLink } from 'react-router-dom'
+import useFetch from '../hooks/useFetch'
 
 const Sidebar = () => {
-    const categories = ["Women's Fashion", "Men's Fashion", "kids", "Health & Beauty", 
-    "Watches Bags and Jwellerys", "Electronics", "Home Appliances", "Plants & Gardening"]
+
+    let categories = ["Men's Clothing", 'Jewelery', 'Electronics', "Women's clothing"]
+        
   return (
     <aside className='sidebar--left'>
         <ul className='sidebar--left__category-list'>
             {
-                categories.map((items, index)=>{
-                    return <li><a href="">{items}</a></li>
-                })
+                (categories!=null) ? categories
+                .map((items, index)=>{
+                    return <li key={index}><NavLink to={`/category/${items}`}>{items}</NavLink></li>
+                }): <h1>No products found</h1>
             }
         </ul>
     </aside>

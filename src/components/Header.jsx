@@ -1,12 +1,15 @@
 import React from 'react'
 import logo from '../assets/images/logo.png'
 import {AiOutlineShoppingCart} from 'react-icons/ai'
+import { NavLink } from 'react-router-dom'
 
 const Header = () => {
   return (
       <header className='header'>
         <div className='header__logo-wrapper'>
+          <NavLink to={"/"}>
           <img src={logo} alt="logo-image" className='header__logo-wrapper__logo' />
+          </NavLink>
         </div>
 
         <div className='header__search-box-wrapper'>
