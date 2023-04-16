@@ -14,7 +14,7 @@ const useFetch = (url) => {
         })
     }, [])
 
-    return data || error
+    return data
 }
 
 export default useFetch

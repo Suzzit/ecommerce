@@ -8,6 +8,7 @@ const Sidebar = () => {
         
   return (
     <aside className='sidebar--left'>
+        <h3>Search by Category</h3>
         <ul className='sidebar--left__category-list'>
             {
                 (categories!=null) ? categories
