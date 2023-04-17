@@ -1,0 +1,18 @@
+.product-showcase{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 20%));
+    gap: 1rem;
+    margin-top: 2.3rem;
+    margin-left: 20%;
+    place-content: center;
+
+    @media (max-width: 1058px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: 900px) {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 0;
+    }
+}
