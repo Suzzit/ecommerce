@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, {useEffect, useMemo, useState} from 'react'
 import { useParams } from 'react-router-dom'
 import Loading from '../components/Loading'
 import Error from '../components/Error'
@@ -9,8 +9,6 @@ const Category = () => {
     const [productsData, setProductsData] = useState([])
     const [loading, setLoading] = useState()
     const [error, setError] = useState({})
-
-    // let data = useFetch(`https://fakestoreapi.com/products/category/${productCategory.toLocaleLowerCase()}`)
 
     useEffect(()=>{
       setLoading(true)
@@ -23,7 +21,7 @@ const Category = () => {
         setLoading(false)
         setError({status: true, errMsg: err.message})
       })
-  }, [productCategory])
+    }, [productCategory])
 
     return (
       <>

@@ -1,6 +1,6 @@
 $main-orange: #F89530;
 
-.header{
+.header {
     width: 100%;
     height: 6rem;
     display: flex;
@@ -16,12 +16,12 @@ $main-orange: #F89530;
         display: none;
     }
 
-    &__logo-wrapper{
+    &__logo-wrapper {
         height: 100%;
         width: 20%;
         text-align: center;
 
-        &__logo{
+        &__logo {
             width: 50%;
             min-width: 4rem;
             height: 100%;
@@ -37,12 +37,12 @@ $main-orange: #F89530;
         align-items: center;
         min-width: 300px;
 
-        &__form{
+        &__form {
             width: 100%;
             display: flex;
             justify-content: center;
 
-            input{
+            input {
                 height: 2rem;
                 width: 80%;
                 border: none;
@@ -51,7 +51,7 @@ $main-orange: #F89530;
                 background-color: rgb(233, 227, 227);
             }
 
-            button{
+            button {
                 height: 2rem;
                 width: 4rem;
                 border: none;
@@ -59,18 +59,18 @@ $main-orange: #F89530;
                 background-color: $main-orange;
             }
 
-            &__searchbtn{
+            &__searchbtn {
                 color: white;
                 font-size: 1.4rem;
             }
         }
     }
 
-    &__cart-wrapper{
+    &__cart-wrapper {
         margin-right: 10px;
         width: 20%;
 
-        &--round{
+        &--round {
             width: 3rem;
             height: 3rem;
             padding: 5px;
@@ -80,14 +80,14 @@ $main-orange: #F89530;
             justify-content: center;
         }
 
-        &__icon{
+        &__icon {
             font-size: 1.7rem !important;
             color: black !important;
             object-fit: contain;
         }
     }
 
-    &__assists-wrapper{
+    &__assists-wrapper {
         position: absolute;
         top: 100%;
         left: 0;
@@ -97,29 +97,36 @@ $main-orange: #F89530;
         background-color: rgb(233, 227, 227);
         padding: 2px 0px;
 
-        a{
+        a {
             text-decoration: none;
             color: black;
             text-transform: uppercase;
             font-size: 0.7rem;
 
             margin: 0px 1rem;
-            &:hover{
+
+            &:hover {
                 color: $main-orange;
             }
         }
     }
 }
 
-@media(max-width: 500px){
-    .header--smallscrn{
+@media(min-width: 500px) {
+    .header--smallscrn {
+        display: none;
+    }
+}
+
+@media(max-width: 500px) {
+    .header--smallscrn {
         height: 6rem;
         width: 100%;
         position: fixed;
-        top: 54%;
+        top: 46%;
         display: flex;
         align-items: center;
-        background-color: white;
+        background-color: whitesmoke;
 
         &__search-box-wrapper {
             height: fit-content;
@@ -128,16 +135,16 @@ $main-orange: #F89530;
             padding: 10px;
             font-size: 1.2rem;
             display: flex;
-            align-items: center;    
+            align-items: center;
             position: fixed;
             top: 0;
-    
-            &__form{
+
+            &__form {
                 width: 100%;
                 display: flex;
                 justify-content: center;
-    
-                input{
+
+                input {
                     height: 2rem;
                     width: 80%;
                     border: none;
@@ -145,23 +152,23 @@ $main-orange: #F89530;
                     outline: none;
                     background-color: rgb(233, 227, 227);
                 }
-    
-                button{
+
+                button {
                     height: 2rem;
                     width: 4rem;
                     border: none;
                     outline: none;
                     background-color: $main-orange;
                 }
-    
-                &__searchbtn{
+
+                &__searchbtn {
                     color: white;
                     font-size: 1.4rem;
                 }
             }
         }
 
-        &__icons-list{
+        &__icons-list {
             height: fit-content;
             width: 100%;
             display: flex;
