@@ -10,7 +10,8 @@ $main-orange: #F89530;
     position: fixed;
     top: 0;
     left: 0;
-    background-color: white;
+background-color: transparent;
+    
 
     @media (max-width: 500px) {
         display: none;
