@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import Sidebar from '../components/Sidebar'
-import Cards from '../components/Cards'
 import useFetch from '../hooks/useFetch'
 import Productshowcase from '../components/Productshowcase'
 
