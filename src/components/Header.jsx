@@ -8,7 +8,7 @@ import {
   BiCategory
 } from 'react-icons/all'
 import { NavLink } from 'react-router-dom'
-import { IconBase, IconContext } from 'react-icons'
+import { IconContext } from 'react-icons'
 
 const Header = () => {
   return (

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Link, NavLink } from 'react-router-dom'
-import useFetch from '../hooks/useFetch'
+import { NavLink } from 'react-router-dom'
 import { BiCategory } from 'react-icons/bi'
 
 const Sidebar = () => {
