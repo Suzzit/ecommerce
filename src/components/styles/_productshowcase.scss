@@ -1,14 +1,18 @@
 .product-showcase{
-    height: 100%;
+    height: fit-content;
     width: 85%;
     display: grid;
     grid-template-columns: repeat(4, minmax(200px, 20%));
     gap: 1rem;
     margin-left: 15%;
-    margin-top: 6rem;
+    margin-top: 8rem;
     place-content: center;
+    padding: 0px 5px;
     // position: relative;
-    background-color: red;
+
+    @media (max-width: 500px) {
+        width: 100%;
+    }
 
     @media (max-width: 1058px) {
         grid-template-columns: repeat(3, 1fr);
@@ -17,5 +21,6 @@
     @media (max-width: 900px) {
         grid-template-columns: repeat(2, 1fr);
         margin-left: 0;
+        width: 100%;
     }
 }

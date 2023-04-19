@@ -57,15 +57,15 @@ const Header = () => {
         }}>
           <ul className='header--smallscrn__icons-list'>
             <li>
-             <NavLink to={'/'}> <AiOutlineHome /> </NavLink>
+             <NavLink to={'/'}> <AiOutlineHome className='navicons'/> </NavLink>
             </li>
 
             <li>
-             <NavLink to={'#'}> <BiCategory /> </NavLink>
+             <NavLink to={'#'}> <BiCategory className='navicons'/> </NavLink>
             </li>
 
             <li>
-             <NavLink to={'#'}> <AiOutlineUser /> </NavLink>
+             <NavLink to={'#'}> <AiOutlineUser className='navicons'/> </NavLink>
             </li>
 
 

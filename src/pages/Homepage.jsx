@@ -28,9 +28,7 @@ const Homepage = () => {
       }
 
   return (
-    <main className='main'>
       <Productshowcase productsData={productsData} />
-    </main>
   )
 }
 
