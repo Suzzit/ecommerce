@@ -27,6 +27,10 @@ const Homepage = () => {
         console.log(err)
       }
 
+      useEffect(()=>{
+        scrollTo(0, 0)
+      }, [])
+
   return (
       <Productshowcase productsData={productsData} />
   )
